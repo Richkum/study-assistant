@@ -11,6 +11,7 @@ export default function Index() {
       }}
     >
       <Text>This is my first modification to the React native app.</Text>
+
     </View>
   );
 }
