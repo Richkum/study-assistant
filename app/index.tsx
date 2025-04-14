@@ -8,6 +8,7 @@ export default function Index() {
       <Text className="text-lg font-bold text-blue-700">
         Hello, NativeWind!
       </Text>
+
     </View>
   );
 }
