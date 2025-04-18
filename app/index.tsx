@@ -48,35 +48,17 @@ export default function Index() {
     try {
       setLoading(true);
 
-      const { data, error } = await supabase.auth.signInWithOAuth({
+      const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          redirectTo: redirectUrl,
           queryParams: {
             access_type: "offline",
             prompt: "consent",
           },
         },
       });
-      console.log("Redirect URL:", redirectUrl);
 
       if (error) throw error;
-
-      // Open the browser for authentication
-      const authUrl = data?.url;
-      console.log("Auth URL:", authUrl);
-
-      if (!authUrl) throw new Error("No auth URL returned");
-
-      const result = await WebBrowser.openAuthSessionAsync(
-        authUrl,
-        redirectUrl
-      );
-
-      if (result.type === "success") {
-        // Supabase  handle the session automatically
-        router.replace("/(app)/home");
-      }
     } catch (error: any) {
       Alert.alert(
         "Authentication Error",
