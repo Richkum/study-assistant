@@ -13,11 +13,11 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: "#2563eb", // Bright blue for light theme
-          dark: "#4f46e5", // Brighter indigo for dark theme (improved from #1e1b4b)
+          dark: "#4f46e5", // Brighter indigo for dark theme
         },
         secondary: {
           DEFAULT: "#4f46e5", // Indigo for light theme
-          dark: "#6366f1", // Brighter indigo for dark theme (improved)
+          dark: "#6366f1", // Brighter indigo for dark theme
         },
         bg: {
           DEFAULT: "#ffffff", // Pure white for light theme
@@ -25,11 +25,11 @@ module.exports = {
         },
         text: {
           DEFAULT: "#1e293b", // Dark blue-gray for light theme
-          dark: "#f1f5f9", // Lighter gray for dark theme (improved contrast)
+          dark: "#f1f5f9", // Lighter gray for dark theme
         },
         border: {
           DEFAULT: "#e2e8f0", // Light gray border
-          dark: "#334155", // Lighter border for dark theme (improved visibility)
+          dark: "#334155", // Lighter border for dark theme
         },
         danger: {
           DEFAULT: "#ef4444", // Red
