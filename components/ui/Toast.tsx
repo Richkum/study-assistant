@@ -50,7 +50,7 @@ export const Toast: React.FC<ToastProps> = ({
   return (
     <Animated.View
       style={{ opacity }}
-      className={`absolute bottom-10 left-4 right-4 ${getBackgroundColor()} p-4 rounded-xl`}
+      className={`absolute bottom-96 left-4 right-4 ${getBackgroundColor()} p-4 rounded-xl`}
     >
       <Text className="text-white dark:text-text-dark text-center font-medium">
         {message}

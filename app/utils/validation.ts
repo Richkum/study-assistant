@@ -51,3 +51,13 @@ export const validateFullName = (name: string): string | null => {
   }
   return null;
 };
+
+export const validatePasswordsMatch = (
+  password: string,
+  confirmPassword: string
+): string | null => {
+  if (password !== confirmPassword) {
+    return "Passwords do not match";
+  }
+  return null;
+};
