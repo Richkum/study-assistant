@@ -27,8 +27,11 @@ export function LogoutButton() {
       disabled={loading}
     >
       {loading ? (
-        <View className="flex-row justify-center items-center">
-          <LoadingSpinner size="small" />
+        <View className="absolute inset-0 bg-bg/50 dark:bg-bg-dark/50 z-50 flex justify-center items-center">
+          <LoadingSpinner
+            size="large"
+            containerClassName="flex justify-center items-center"
+          />
         </View>
       ) : (
         <Text className="text-white font-semibold text-center">Sign Out</Text>
